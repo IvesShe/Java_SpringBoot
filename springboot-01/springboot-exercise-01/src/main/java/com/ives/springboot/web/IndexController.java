@@ -1,0 +1,13 @@
+package com.ives.springboot.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class IndexController {
+    @RequestMapping(value = "springboot/say")
+    public @ResponseBody String say(){
+        return "哈囉，SpringBoot";
+    }
+}
